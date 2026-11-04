@@ -1,0 +1,23 @@
+[project]
+name = "sps-genai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sisi-0131", email = "sm5970@columbia.edu" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "pillow>=12.3.0",
+    "spacy>=3.8.16",
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+]
+
+[project.scripts]
+sps-genai = "sps_genai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13.0"]
+build-backend = "uv_build"
